@@ -1,0 +1,23 @@
+appId: com.patrickalfeisaebo.googletasksdesktop
+productName: Google Tasks Desktop
+directories:
+  output: release/${version}
+  buildResources: resources
+files:
+  - '!**/.DS_Store'
+  - '!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}'
+  - '!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}'
+  - '!**/*.map'
+  - '!**/.git/**'
+  - '!release{,/**/*}'
+  - '!src{,/**/*}'
+  - out/main{,/**/*}
+  - out/preload{,/**/*}
+  - out/renderer{,/**/*}
+extraResources:
+  - from: config
+    to: config
+mac:
+  target:
+    - dmg
+  category: public.app-category.productivity

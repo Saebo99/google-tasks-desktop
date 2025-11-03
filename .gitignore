@@ -1,0 +1,12 @@
+node_modules
+dist
+out
+release
+*.log
+*.tsbuildinfo
+.DS_Store
+/coverage
+.env.local
+.env
+config/.env.production
+config/.env.local
